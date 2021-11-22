@@ -38,3 +38,8 @@ output "samplex" {
 output "sampley" {
   value = "value 1 = ${var.sampley["dfg"]}, value 2 = ${var.sampley["no"]}, value 3 = ${var.sampley["boo"]}"
 }
+
+variable "a" {}
+output "a" {
+  value = var.a
+}
