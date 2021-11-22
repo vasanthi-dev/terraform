@@ -1,3 +1,3 @@
 output "abc" {
-  value = "Hello World"
+  value = "Hello World \nThis is Terraform"
 }
