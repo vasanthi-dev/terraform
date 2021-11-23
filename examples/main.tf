@@ -14,9 +14,13 @@ module "ec2" {
   source = "./ec2"
   SGID   = module.securitygroup.SGID
   name   = ["new1", "new2"]
+  instance_type = var.instance_type
+  env           = var.env
 }
 
 module "securitygroup" {
   source = "./securitygroup"
 }
 
+variable "instance_type" {}
+variable "env" {}
