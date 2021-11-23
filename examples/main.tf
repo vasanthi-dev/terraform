@@ -54,10 +54,8 @@ resource "aws_instance" "sample" {
 
 terraform {
   backend "s3" {
-    config = {
-      bucket = "terraform-dev60"
-      key    = "example/sample/terraform.tfstate"
-      region = "us-east-1"
-    }
+    bucket = "terraform-dev60"
+    key    = "example/sample/terraform.tfstate"
+    region = "us-east-1"
   }
 }
